@@ -1,8 +1,3 @@
-#include<stdio.h>
-
-int main(void)
-{ 
-
     /*
 
 we had to find sine of value given by user  wich will be between 0 and 1 
@@ -21,6 +16,12 @@ and sign change in farmula -+-+-+ like that
 
 
 */
+#include<stdio.h>
+
+int main(void)
+{ 
+
+
 double x , power ,sine = 0 , term;
 int fac , sign ; 
 

@@ -2,9 +2,9 @@
 #define PI 3.14159
 int main(void)
 { 
- int radius;
+ double radius;
  printf("Enter radius:");
- scanf("%d", &radius);
+ scanf("%lf", &radius);
 printf("volume is : %lf \n\n",  (4/3.0) *PI  *radius*radius*radius  );
 return 0;
 }
