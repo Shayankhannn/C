@@ -21,7 +21,7 @@ and sign change in farmula -+-+-+ like that
 
 
 */
-double x , value ;
+double x , power ,sine = 0 , term;
 int fac , sign ; 
 
 
@@ -29,14 +29,20 @@ printf("please enter value between 0 and 1 \n ");
 
 scanf("%lf", &x);
 
+if (x >= 1 || x <= 0 ) 
+{
+    printf("please enter number between 0 and 1 ");
+    return 0;
+}
+
 
 sign = 1; 
 for(int i =1; i<=7; i+=2){
 
-    value = 1 ;
+    power = 1 ;
     for (int j =1 ; j <= i ; j++)
     {
-        value *= x ;
+        power *= x ;
 
     }
     fac= 1 ;
@@ -44,13 +50,18 @@ for(int i =1; i<=7; i+=2){
         fac *= k ; 
     }
     
-    printf("power %lf \n \n fac %d \n" , value, fac);
+    term =  power/fac ;
+    sine += sign * term ;
+    sign = -sign ;
 
 
+    
+    
 
-
+    
 }
 
+printf("sine of value : %.2lf is %.6lf\n" , x, sine);
 
 return 0;
 }
