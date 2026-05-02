@@ -12,6 +12,7 @@ for(i = 0; i <30; i++)
 
 // fabs is for double float 
 // abs is for int
+// sin is a math func
 
 printf("\n+++++++\n");
 return 0;
