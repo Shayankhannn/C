@@ -10,6 +10,8 @@ for(i = 0; i <30; i++)
  printf("sin( %lf ) = %lf \t", interval, fabs( sin(interval)));
 }
 
+// fabs is for double float 
+// abs is for int
 
 printf("\n+++++++\n");
 return 0;
